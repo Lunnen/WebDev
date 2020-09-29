@@ -9,11 +9,20 @@ med HTML5. Studerande får en introduktion till webben, HTML samt hur stilsättn
 Innehåll
 
 • HTML5
+
 • Introduktion till HTTP
+
 • En webbsidas anatomi
+
 • Länkar
+
 • CSS
+
 • CSS-ramverk, till exempel Bootstrap
+
 • Sökmotoroptimering
+
 • Introduktion till webbsäkerhet
+
 • Utvecklingsverktyg
+
