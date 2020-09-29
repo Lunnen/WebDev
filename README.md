@@ -1,4 +1,4 @@
-# 2HTML-CSS-BOOTSTRAP
+# 2HTML-CSS
 Andra kursen. EC Utbildning. Javautvecklare 2020-22. 
 
 Syfte
