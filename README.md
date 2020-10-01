@@ -1,4 +1,4 @@
-# 2HTML-CSS
+# HTML5-CSS
 Andra kursen. EC Utbildning. Javautvecklare 2020-22. 
 
 Syfte
