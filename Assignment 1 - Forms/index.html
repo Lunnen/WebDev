@@ -7,22 +7,25 @@
 </head>
 <body>
 
-<h1>Undersökningsformulär</h1>
-<p>Vänligen mata in dina uppgifter i nedanstående fält.</p>
 
 <form id=form1 action="submit" method="post">
+
+	<h1 style="text-align:center;">Undersökningsformulär</h1>
+	<p style="text-align:center;">Vänligen mata in dina uppgifter i nedanstående fält.</p>
+	<p style="text-align:center;">&nbsp;</p>
+	
   <ul>
    <li>
      <label for="name"><strong>Ange fullständigt namn:</strong></label>
      <input type="text" id="name" name="user_name">
    </li>
    <li>
-    <label for="random"><strong>Önskat användarnamn (max 20 tecken):</strong></label>
+    <label for="random">Önskat användarnamn (max 20 tecken):</label>
     <input type="text" id="random" name="random" maxlength="20" size=35>
   </li>
    <li>
      <label for="user_bio">Beskriv dig själv:</label>
-     <textarea class id="user_bio" name="user_bio" rows="4" cols="30" style="background-color:silver;"></textarea>
+     <textarea class id="user_bio" name="user_bio" rows="4" cols="30" style="background-color:lightgrey;"></textarea>
    </li>
    <li>
     <label for="user_bio">Tränar du någon sport?:</label>

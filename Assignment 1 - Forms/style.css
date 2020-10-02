@@ -1,16 +1,38 @@
 
 
-/* Main body */
 body{
-  background-color: lightslategrey;
-  font: white;
+	background-color: #3f99ff;
 }
 
 li {
-  padding: 10px;
+	padding: 10px;
 }
 
-/* The container */
+form {
+	display:table;
+	margin:auto;
+	padding: 20px;
+	background-color: skyblue;
+	border: double;
+	max-width: 700px;
+	border-radius: 15px;
+	padding: 20px;
+}
+input[type=submit] {
+	display: inline-block;
+	border: none;
+	color: black;
+	padding: 16px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 15px;
+	padding: 20px;
+	width: 450px;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
 .container {
     display: block;
     position: relative;
@@ -24,15 +46,11 @@ li {
     -ms-user-select: none;
     user-select: none;
   }
-  
-  /* Hide the browser's default radio button */
   .container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
   }
-  
-  /* Create a custom radio button */
   .checkmark {
     position: absolute;
     top: 0;
@@ -42,23 +60,18 @@ li {
     background-color: #eee;
     border-radius: 50%;
   }
-  
-  /* On mouse-over, add a grey background color */
   .container:hover input ~ .checkmark {
     background-color: #ccc;
   }
-  
-  /* When the radio button is checked, add a blue background */
   .container input:checked ~ .checkmark {
     background-color: #2196F3;
   }
-  
-  /* Style the indicator (dot/circle) */
+
   .container .checkmark:after {
-       top: 9px;
-      left: 9px;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: white;
+	top: 9px;
+	eft: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
   }
