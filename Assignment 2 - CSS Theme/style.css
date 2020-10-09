@@ -12,7 +12,6 @@
 html {	
 	margin: 0px;
 	padding: 0px;
-	min-width:770x;
 	background-color:#c3d3b2;
 	}
 	
@@ -75,9 +74,9 @@ a:hover, a:focus, a:active {
 
 /* Main DIV */	
 .page-wrapper {  
-	position:relative; 
-	left:10px;
+	position: relative; 
 	width: 770px;
+	margin: 0 auto; /* Centers the wrapper-page */
 	}
 	
 header { 
