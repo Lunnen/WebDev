@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Fjällvandring AB. Galleriet med bilder på de fina vyer du kan få uppleva när du reser / vandrar med oss.">
+  <meta name="keywords"
+    content="Fjäll, Berg, Vandring, Hiking, Nyhet, Resor, Resa, Guidning, Guide, Sarek, Vyer, Norrsken">
+  <meta name="author" content="Andreas Lönnholm">
+  <link rel="icon" href="../hiking.svg" />
+
+  <title>Fjällvandring AB - Kontakta oss</title>
+
+  <link href="../bstrap/bootstrap.min.css" rel="stylesheet" />
+  <link href="../styles/main.css" rel="stylesheet" />
+  <link href="../styles/social.css" rel="stylesheet" />
+  <!-- social media button css -->
+  <link href="../styles/form.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="inner-body">
+    <nav class="navbar navbar-expand-md navbar-dark top">
+      <div class="navbar-brand">Fjällvandring AB</div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html"> Startsida </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../gallery/index.html">Galleri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../employees/index.html">Personal</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">
+              Kontakta oss
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <form id="form1" action="mailto:aggez83@gmail.com" method="post">
+        <h1>Kontaktformulär</h1>
+
+        <div class="topText">
+          Fyll i nedanstående uppgifter så kontaktar vi er så snart vi kan.
+        </div>
+        <ul>
+          <li>
+            <label for="name" id="label-name"><strong>Namn:</strong></label><br />
+            <input type="text" id="name" name="name" minlength="6" maxlength="50" required
+              placeholder="exempel: Anders Johansson" />
+          </li>
+
+          <li>
+            <label for="emailAddress">E-post:</label><br />
+            <input id="emailAddress" type="email" name="email" required placeholder="exempel: namn@domän.com"
+              pattern="+@+.+" title="Vänligen ange en korrekt e-postadress" />
+          </li>
+
+          <li>
+            <label for="description">Ämne:</label><br />
+            <textarea id="description" name="description" required
+              placeholder="Skriv vad du önskar kontakta oss om här..." rows="6" cols="45" maxlength="300"></textarea>
+          </li>
+          <li>
+            <input type="submit" value="Skicka in svar" />
+          </li>
+        </ul>
+      </form>
+    </main>
+
+    <footer class="container bottom-footer">
+      <div id="company-address">
+        <ul>
+          <li>Fjällvandring AB</li>
+          <li>Långtursvägen 131</li>
+          <li>122 34 Fjollträsk</li>
+          <li>Tel-nr 0700 11 33 44</li>
+        </ul>
+      </div>
+
+      <div class="social-buttons">
+        <div class="facebook goof icon">
+          <a href="https://www.facebook.com" target="_blank"></a>
+        </div>
+        <div class="twitter icon">
+          <a href="https://www.twitter.com" target="_blank"></a>
+        </div>
+        <div class="linkedin icon">
+          <a href="https://www.linkedin.com" target="_blank"></a>
+        </div>
+        <div class="instagram icon">
+          <a href="http://www.instagram.com" target="_blank"></a>
+        </div>
+        <div class="github icon">
+          <a href="https://www.github.com" target="_blank"></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../bstrap/jquery-slim.min.js"></script>
+  <script src="../bstrap/popper.min.js"></script>
+  <script src="../bstrap/bootstrap.min.js"></script>
+</body>
+
+</html>

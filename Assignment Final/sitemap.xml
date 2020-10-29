@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<urlset xmlns="http://www.google.com/schemas/sitemap/0.84" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+		<url>
+			<loc>index.html</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>/gallery/index.html</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>/employees/index.html</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>/contact/index.html</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+	</urlset>
+
