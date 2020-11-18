@@ -1,2 +1,5 @@
 #WebDev @ EC JavaDev 2020-22.
-- HTML / CSS / BootStrap / JavaScript
+- HTML5
+- CSS3
+- BootStrap 4 
+- JavaScript ES6
