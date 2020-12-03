@@ -65,7 +65,11 @@ function initButton() {
   initForm.appendChild(formBtn);
 
   formBtn.addEventListener("click", function () {
-    validateLoginInfo();
+    if (validateLoginInfo()) {
+      alert("Welcome");
+    } else {
+      input.style.border = "3px solid red";
+    }
   });
 }
 
@@ -74,10 +78,8 @@ function validateLoginInfo() {
   //if the username is in the usernames array return true if not return false.
 
   if (usernames.includes(input.value)) {
-    alert("Welcome");
-    return;
+    return true;
   } else {
-    input.style.border = "3px solid red";
     return false;
   }
 }
