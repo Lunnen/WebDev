@@ -77,11 +77,7 @@ function validateLoginInfo() {
   //Get the input using form input element (TIP: use .value)
   //if the username is in the usernames array return true if not return false.
 
-  if (usernames.includes(input.value)) {
-    return true;
-  } else {
-    return false;
-  }
+  return usernames.includes(input.value); //if included in array, returns true.
 }
 
 //Write code here to call the init function only after the dom has been loaded (TIP: check "DOMContentLoaded" event)
