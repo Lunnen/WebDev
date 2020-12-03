@@ -80,12 +80,10 @@ function validateLoginInfo() {
   if (usernames.includes(input.value)) {
     alert("Welcome");
     return;
-  } else {
-    return false;
   }
 }
 
 //Write code here to call the init function only after the dom has been loaded (TIP: check "DOMContentLoaded" event)
-window.addEventListener("DOMContentLoaded", (e) => {
+window.addEventListener("DOMContentLoaded", () => {
   init();
 });
