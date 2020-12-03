@@ -61,7 +61,6 @@ function initButton() {
   let formBtn = document.createElement("button");
 
   formBtn.textContent = "Login";
-  //formBtn.type = "submit";
 
   initForm.appendChild(formBtn);
 
