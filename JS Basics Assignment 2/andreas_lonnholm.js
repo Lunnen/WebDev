@@ -65,11 +65,7 @@ function initButton() {
   initForm.appendChild(formBtn);
 
   formBtn.addEventListener("click", function () {
-    if (validateLoginInfo()) {
-      alert("Welcome");
-    } else {
-      input.style.border = "3px solid red";
-    }
+    validateLoginInfo();
   });
 }
 
@@ -80,6 +76,9 @@ function validateLoginInfo() {
   if (usernames.includes(input.value)) {
     alert("Welcome");
     return;
+  } else {
+    input.style.border = "3px solid red";
+    return false;
   }
 }
 
