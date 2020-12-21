@@ -1,0 +1,36 @@
+.avatar {
+  width: 200px;
+  height: 200px;
+  margin-right: 2rem;
+}
+.EmployeeDiv {
+  display: flex;
+  box-sizing: border-box;
+  width: 70%;
+  border: 2px solid black;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #dedede;
+}
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+ul,
+form {
+  list-style: none;
+}
+form {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background: #dedede;
+  border: 2px solid black;
+}
+form label,
+input {
+  margin: 0.5rem;
+}
