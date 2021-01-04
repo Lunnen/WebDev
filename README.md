@@ -7,8 +7,8 @@
   Assignment Final - A responsive website in BootStrap and Flexbox
 
 - JavaScript ES6 with ReactJS\
-  Assignment 1 - Object Constructors\
-  Assignment 2 - Login\
+  Assignment 1 - Object Constructor\
+  Assignment 2 - Login - validated\
   Assignment 3 - ReactJS lab - A list of employees
   
 -------------------------------------------------
