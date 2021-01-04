@@ -21,3 +21,17 @@
   cursor: pointer;
 }
 
+input {
+  margin: 0.2rem;
+  width: 50%;
+  display: block;
+  align-items: center;
+}
+input[button] {
+  display: block;
+  justify-content: center;
+}
+.red {
+  color: red;
+  font-weight: bold;
+}

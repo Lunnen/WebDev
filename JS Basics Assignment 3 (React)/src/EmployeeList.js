@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Employee from "./Employee";
 import "./Employee.css";
+import EmployeeForm from "./EmployeeForm";
 
 function EmployeeList() {
   let [Employees, setEmployees] = useState([
@@ -58,9 +59,20 @@ function EmployeeList() {
     });
   }
 
+  /* Challenge 2 (HIGH) - Add a form with an option to add new content */
+  function handleAddEmployeeManually(input) {
+    setEmployees(function (prevState) {
+      return [...prevState, input]; //show previous info and add with new input from EmpForm
+    });
+  }
+  /* ------------------------------------------------- */
+
   return (
     <>
       <h3>Employee List</h3>
+
+      <EmployeeForm onSubmit={handleAddEmployeeManually} />
+      {/* Part of Challenge 2 - when this function is called by child, run it */}
 
       <button className="button" onClick={handleAddEmployee}>
         Add Employee
