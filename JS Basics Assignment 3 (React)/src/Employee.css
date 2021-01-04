@@ -20,17 +20,4 @@
   font-size: 1rem;
   cursor: pointer;
 }
-ul,
-form {
-  list-style: none;
-}
-form {
-  padding: 1rem;
-  margin: 0.5rem 0;
-  background: #dedede;
-  border: 2px solid black;
-}
-form label,
-input {
-  margin: 0.5rem;
-}
+

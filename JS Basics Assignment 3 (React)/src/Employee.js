@@ -2,7 +2,7 @@ function Employee({ name, email, phone, skills, avatar }) {
   return (
     <div className="EmployeeDiv">
       <img className="avatar" alt="Bild" src={avatar} />
-      <ul>
+      <div>
         <h2>{name}</h2>
         <p>
           <strong>email: </strong>
@@ -16,7 +16,7 @@ function Employee({ name, email, phone, skills, avatar }) {
           <strong>skills: </strong>
           {skills}
         </p>
-      </ul>
+      </div>
     </div>
   );
 }
