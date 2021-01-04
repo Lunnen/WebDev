@@ -8,7 +8,7 @@
 
 - JavaScript ES6 with ReactJS\
   Assignment 1 - Object Constructor\
-  Assignment 2 - Login validation
+  Assignment 2 - Login validation\
   Assignment 3 - ReactJS lab - A list of employees
   
 -------------------------------------------------
