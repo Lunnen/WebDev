@@ -82,11 +82,14 @@ function EmployeeList() {
 
     let newArr = [...Employees]; // copying the old array
     newArr[inputIndex] = {
-      name: prompt("Please enter name"),
-      email: prompt("Email: "),
-      phone: prompt("Phone: "),
-      skills: prompt("Skills: "),
-      avatar: prompt("Link to Avatar/Image icon: "),
+      name: prompt("Please enter name", Employees[inputIndex].name), //asks for new name and shows the former one in an editable way.
+      email: prompt("Email: ", Employees[inputIndex].email),
+      phone: prompt("Phone: ", Employees[inputIndex].phone),
+      skills: prompt("Skills: ", Employees[inputIndex].skills),
+      avatar: prompt(
+        "Link to Avatar/Image icon: ",
+        Employees[inputIndex].avatar
+      ),
     };
     setEmployees(newArr);
   }
