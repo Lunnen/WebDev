@@ -19,10 +19,17 @@ function Employee(props) {
 
         <button
           type="button"
-          className="button"
+          className="inner-buttons"
           onClick={() => props.handleRemove()} // Part of Challenge 3
         >
           Remove
+        </button>
+        <button
+          type="button"
+          className="inner-buttons"
+          onClick={() => props.handleEdit()} // Part of Challenge 4
+        >
+          Edit
         </button>
       </div>
     </div>

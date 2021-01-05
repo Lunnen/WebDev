@@ -74,6 +74,23 @@ function EmployeeList() {
     setEmployees(newList);
   }
   /* ------------------------------------------------- */
+  /* Challenge 4 (INSANE) - Add update/edit functionality */
+  function handleEdit(inputIndex) {
+    /* The input is a simple Prompt for info. 
+       Functional but not optimal. 
+     */
+
+    let newArr = [...Employees]; // copying the old array
+    newArr[inputIndex] = {
+      name: prompt("Please enter name"),
+      email: prompt("Email: "),
+      phone: prompt("Phone: "),
+      skills: prompt("Skills: "),
+      avatar: prompt("Link to Avatar/Image icon: "),
+    };
+    setEmployees(newArr);
+  }
+  /* ------------------------------------------------- */
 
   return (
     <>
@@ -95,6 +112,7 @@ function EmployeeList() {
             skills={skills}
             avatar={avatar}
             handleRemove={() => handleRemove(index)} //Challenge 3 - called by child.
+            handleEdit={() => handleEdit(index)} //Challenge 4 - called by child.
           />
         );
       })}

@@ -12,7 +12,8 @@
   padding: 1rem;
   background-color: #dedede;
 }
-.button {
+.button,
+.inner-buttons {
   background-color: #4caf50;
   border: none;
   color: white;
@@ -34,4 +35,9 @@ input[button] {
 .red {
   color: red;
   font-weight: bold;
+}
+.inner-buttons {
+  margin: 0.2rem;
+  font-size: 0.75rem;
+  padding: 0.5rem;
 }
