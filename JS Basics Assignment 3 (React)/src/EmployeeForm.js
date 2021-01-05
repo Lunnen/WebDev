@@ -5,22 +5,15 @@ import React from "react";
 import { useForm } from "react-hook-form";
 
 export default function EmpForm(props) {
-  const { register, handleSubmit, watch, errors } = useForm();
-
-  //const onSubmit = (data) => console.log(data);
+  const { register, handleSubmit, errors } = useForm();
 
   const onSubmit = (data) => {
     props.onSubmit(data);
   };
 
-  //console.log(watch(..."")); // watch input value by passing the name of it
-
   return (
     /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
     <form className="EmployeeDiv" onSubmit={handleSubmit(onSubmit)}>
-      {/* register your input into the hook by invoking the "register" function 
-       include validation with required or other standard HTML validation rules */}
-
       <div>
         <p>
           Fill this form to add Employees manually, <br />

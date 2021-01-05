@@ -66,26 +66,35 @@ function EmployeeList() {
     });
   }
   /* ------------------------------------------------- */
+  /* Challenge 3 (HIGH) - Add delete functionality */
+  function handleRemove(inputIndex) {
+    const newList = Employees.filter(
+      (item, itemIndex) => itemIndex !== inputIndex
+    );
+    setEmployees(newList);
+  }
+  /* ------------------------------------------------- */
 
   return (
     <>
       <h3>Employee List</h3>
 
       <EmployeeForm onSubmit={handleAddEmployeeManually} />
-      {/* Part of Challenge 2 - when this function is called by child, run it */}
+      {/* Challenge 2 - Called by child */}
 
       <button className="button" onClick={handleAddEmployee}>
         Add Employee
       </button>
-      {Employees.map(function ({ name, email, phone, skills, avatar }) {
+      {Employees.map(function ({ name, email, phone, skills, avatar }, index) {
         return (
           <Employee
-            key={Math.random() * Date.now()} //should be unique
+            key={index} //should be unique
             name={name}
             email={email}
             phone={phone}
             skills={skills}
             avatar={avatar}
+            handleRemove={() => handleRemove(index)} //Challenge 3 - called by child.
           />
         );
       })}
