@@ -12,7 +12,8 @@
   padding: 1rem;
   background-color: #dedede;
 }
-.button {
+.button,
+.inner-buttons {
   background-color: #4caf50;
   border: none;
   color: white;
@@ -20,17 +21,23 @@
   font-size: 1rem;
   cursor: pointer;
 }
-ul,
-form {
-  list-style: none;
-}
-form {
-  padding: 1rem;
-  margin: 0.5rem 0;
-  background: #dedede;
-  border: 2px solid black;
-}
-form label,
+
 input {
-  margin: 0.5rem;
+  margin: 0.2rem;
+  width: 50%;
+  display: block;
+  align-items: center;
+}
+input[button] {
+  display: block;
+  justify-content: center;
+}
+.red {
+  color: red;
+  font-weight: bold;
+}
+.inner-buttons {
+  margin: 0.2rem;
+  font-size: 0.75rem;
+  padding: 0.5rem;
 }

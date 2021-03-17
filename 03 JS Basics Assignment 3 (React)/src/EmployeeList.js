@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Employee from "./Employee";
 import "./Employee.css";
+import EmployeeForm from "./EmployeeForm";
 
 function EmployeeList() {
   let [Employees, setEmployees] = useState([
@@ -58,22 +59,63 @@ function EmployeeList() {
     });
   }
 
+  /* Challenge 2 (HIGH) - Add a form with an option to add new content */
+  function handleAddEmployeeManually(input) {
+    setEmployees(function (prevState) {
+      return [...prevState, input]; //show previous info and add with new input from EmpForm
+    });
+  }
+  /* ------------------------------------------------- */
+  /* Challenge 3 (HIGH) - Add delete functionality */
+  function handleRemove(inputIndex) {
+    const newList = Employees.filter(
+      (item, itemIndex) => itemIndex !== inputIndex
+    );
+    setEmployees(newList);
+  }
+  /* ------------------------------------------------- */
+  /* Challenge 4 (INSANE) - Add update/edit functionality */
+  function handleEdit(inputIndex) {
+    /* The input is a simple Prompt for info. 
+       Functional but not optimal. 
+     */
+
+    let newArr = [...Employees]; // copying the old array
+    newArr[inputIndex] = {
+      name: prompt("Please enter name", Employees[inputIndex].name), //asks for new name and shows the former one in an editable way.
+      email: prompt("Email: ", Employees[inputIndex].email),
+      phone: prompt("Phone: ", Employees[inputIndex].phone),
+      skills: prompt("Skills: ", Employees[inputIndex].skills),
+      avatar: prompt(
+        "Link to Avatar/Image icon: ",
+        Employees[inputIndex].avatar
+      ),
+    };
+    setEmployees(newArr);
+  }
+  /* ------------------------------------------------- */
+
   return (
     <>
       <h3>Employee List</h3>
 
+      <EmployeeForm onSubmit={handleAddEmployeeManually} />
+      {/* Challenge 2 - Called by child */}
+
       <button className="button" onClick={handleAddEmployee}>
         Add Employee
       </button>
-      {Employees.map(function ({ name, email, phone, skills, avatar }) {
+      {Employees.map(function ({ name, email, phone, skills, avatar }, index) {
         return (
           <Employee
-            key={Math.random() * Date.now()} //should be unique
+            key={index} //should be unique
             name={name}
             email={email}
             phone={phone}
             skills={skills}
             avatar={avatar}
+            handleRemove={() => handleRemove(index)} //Challenge 3 - called by child.
+            handleEdit={() => handleEdit(index)} //Challenge 4 - called by child.
           />
         );
       })}

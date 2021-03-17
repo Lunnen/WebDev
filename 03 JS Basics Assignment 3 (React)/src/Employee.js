@@ -1,22 +1,37 @@
-function Employee({ name, email, phone, skills, avatar }) {
+function Employee(props) {
   return (
-    <div className="EmployeeDiv">
-      <img className="avatar" alt="Bild" src={avatar} />
-      <ul>
-        <h2>{name}</h2>
+    <div className="EmployeeDiv" key={props.index}>
+      <img className="avatar" alt="Bild" src={props.avatar} />
+      <div>
+        <h2>{props.name}</h2>
         <p>
           <strong>email: </strong>
-          {email}
+          {props.email}
         </p>
         <p>
           <strong>phone: </strong>
-          {phone}
+          {props.phone}
         </p>
         <p>
           <strong>skills: </strong>
-          {skills}
+          {props.skills}
         </p>
-      </ul>
+
+        <button
+          type="button"
+          className="inner-buttons"
+          onClick={() => props.handleRemove()} // Part of Challenge 3
+        >
+          Remove
+        </button>
+        <button
+          type="button"
+          className="inner-buttons"
+          onClick={() => props.handleEdit()} // Part of Challenge 4
+        >
+          Edit
+        </button>
+      </div>
     </div>
   );
 }

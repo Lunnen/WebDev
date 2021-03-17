@@ -1,8 +1,14 @@
 -------------------------------------------------
-#WebDev @ EC JavaDev 2020-22.
+#WebDev @ EC JavaDev 2020-22
 
-- HTML5, CSS3 and BootStrap 4.
+- HTML5, CSS3 and BootStrap 4\
+  Assignment 1 - Forms in HTML/CSS\
+  Assignment 2 - Single-page CSS-themed site.\
+  Assignment Final - A responsive website in BootStrap and Flexbox
 
-- JavaScript ES6 with ReactJS
-
+- JavaScript ES6 with ReactJS\
+  Assignment 1 - Object Constructor\
+  Assignment 2 - Login validation\
+  Assignment 3 - ReactJS lab - A list of employees
+  
 -------------------------------------------------
