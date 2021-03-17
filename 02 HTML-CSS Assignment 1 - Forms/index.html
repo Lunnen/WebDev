@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<title>Företag AB - undersökningsformulär </title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<form id=form1 action="submit" method="post">
+
+	<h1 style="text-align:center;">Undersökningsformulär</h1>
+	<p style="text-align:center;">Vänligen mata in dina uppgifter i nedanstående fält.</p>
+	
+  <ul>
+   <li>
+     <label for="name"><strong>Ange fullständigt namn:</strong></label>
+     <input type="text" id="name" name="user_name">
+   </li>
+   <li>
+    <label for="random">Önskat användarnamn (max 20 tecken):</label>
+    <input type="text" id="random" name="random" maxlength="20" size=35>
+  </li>
+   <li>
+     <label for="user_bio">Beskriv dig själv:</label>
+     <textarea class id="user_bio" name="user_bio" rows="4" cols="30" style="background-color:lightgrey;"></textarea>
+   </li>
+   <li>
+    <label for="user_bio">Tränar du någon sport?:</label>
+    <label class="container">JA
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">NEJ
+        <input type="radio" checked="checked" name="radio">
+        <span class="checkmark"></span>
+      </label>
+   </li>
+   <li>
+    <label for="user_bio"><strong><em>På vilket/vilka sätt föredrar du att läsa om intressanta saker?</em></strong></label>
+    <label class="container">Böcker 
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      
+      <label class="container">Tidningar 
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      
+      <label class="container">Online (på nätet)
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+   </li>
+   <li>
+    <label for="movieGenre">Välj din favorit-genre inom film:</label>
+    <select id="movieGenre" name="movieGenre">
+      <option hidden selected label=" "></option>
+      <option value="action">Action</option>
+      <option value="comedy">Komedi</option>
+      <option value="romance">Romantik</option>
+      <option value="drama">Drama</option>
+      <option value="horror">Skräck</option>
+    </select>
+   </li>
+  </ul>
+  <input type="submit" value="Skicka in svar">
+ </form>
+
+</body>
+</html>
