@@ -1,0 +1,165 @@
+:root {
+  --pokeCardSize: 120px;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  background-color: skyblue;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bug {
+  background-color: #f6d6a7;
+}
+.dark {
+  background-color: #707070;
+}
+.dragon {
+  background-color: #53a4cf;
+}
+.electric {
+  background-color: rgb(255, 255, 161);
+}
+.fairy {
+  background-color: rgba(255, 192, 203, 0.863);
+}
+.fighting {
+  background-color: #d56723;
+}
+.fire {
+  background-color: #fbe3df;
+}
+.flying {
+  background-color: #3dc7ef;
+}
+.ghost {
+  background-color: rgb(247, 247, 247);
+}
+.grass {
+  background-color: #9bcc50;
+}
+.ground {
+  background-color: #f7de3f;
+}
+.ice {
+  background-color: #51c4e7;
+}
+.normal {
+  background-color: #f4f4f4;
+}
+.poison {
+  background-color: #b97fc9;
+}
+.psychic {
+  background-color: #f366b9;
+}
+.rock {
+  background-color: #a38c21;
+}
+.steel {
+  background-color: #b7b7ce;
+}
+.water {
+  background-color: #4592c4;
+}
+
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.all-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: top;
+  justify-content: center;
+}
+.thumb-container {
+  box-sizing: border-box;
+  background-color: rgba(251, 247, 245, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  padding: 1rem;
+  margin: 0.3rem;
+  border: 1px solid #efefef;
+  border-radius: 0.2rem;
+  min-width: 160px;
+  text-align: left;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
+}
+
+.thumb-container .number {
+  border-radius: 1rem;
+  padding: 0.2rem 0.4rem;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.thumb-container img {
+  width: var(--pokeCardSize);
+  height: var(--pokeCardSize);
+}
+.thumb-container small {
+  text-transform: capitalize;
+}
+.detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.Show-more {
+  background: #1167b1 linear-gradient(#187bcd, #2a9df4) repeat-x;
+  border-radius: 0.5rem;
+  border: 1px solid #c6c6c6;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  min-width: 70%;
+  margin: 1rem 0;
+}
+.typeBox,
+.statBox {
+  border-radius: 7px;
+  border: 1px solid #c6c6c6;
+  padding: 0 0.5rem;
+  margin: 0;
+}
+.typeBox {
+  text-transform: uppercase;
+}
+.statBox {
+  background: #2565ae;
+  color: white;
+}
+.abilityBox {
+  background: #66d3fa;
+  color: #444;
+}
+.topLogo {
+  width: 80%; /* Responsive size */
+  display: block; /* Center image.. */
+  margin-left: auto;
+  margin-right: auto;
+}
+.removeButton {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: 0;
+}
+h3::first-letter {
+  text-transform: UPPERCASE;
+}
+h3 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
