@@ -1,0 +1,22 @@
+com/example/demo/service/impl/ServiceImpl.java
+ com.example.demo.service.impl.ServiceImpl
+com/example/demo/service/Service.java
+ com.example.demo.service.Service
+com/example/demo/model/request/ProductRequestModel.java
+ com.example.demo.model.request.ProductRequestModel
+com/example/demo/model/response/ProductResponseModel.java
+ com.example.demo.model.response.ProductResponseModel
+com/example/demo/controller/ValidationHandler.java
+ com.example.demo.controller.ValidationHandler
+com/example/demo/repository/entity/ProdEntity.java
+ com.example.demo.repository.entity.ProdEntity
+com/example/demo/DemoApplication.java
+ com.example.demo.DemoApplication
+com/example/demo/repository/ProdRepository.java
+ com.example.demo.repository.ProdRepository
+com/example/demo/shared/dto/ProdDto.java
+ com.example.demo.shared.dto.ProdDto
+com/example/demo/shared/Util.java
+ com.example.demo.shared.Util
+com/example/demo/controller/UserController.java
+ com.example.demo.controller.UserController
