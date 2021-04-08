@@ -60,20 +60,25 @@ public class ServiceImpl implements Service {
 
     @ResponseStatus(value=HttpStatus.BAD_REQUEST, reason = "A parameter's invalid")
     public void updateProduct(String product_id, ProdDto inputDto) {
+
         ProdEntity ProductFound = productRepository
                 .findByProductId(product_id).orElseThrow( () -> new ResponseStatusException(HttpStatus.NOT_FOUND, ("id "+product_id+" doesn't exist!") ));
+
+
+
 
             //Values have to be different to be updated
             if (inputDto.getName() != null && (!inputDto.getName().equals(ProductFound.getName()) ) ){
                 ProductFound.setName(inputDto.getName());
             }
-            if ((inputDto.getCost() >= 0 && (inputDto.getCost() != (ProductFound.getCost())))){
+            if ( inputDto.getCost() != 0 && (inputDto.getCost() != (ProductFound.getCost()) )){
                 ProductFound.setCost(inputDto.getCost());
             }
             if (inputDto.getCategory() != null && (!inputDto.getCategory().equals(ProductFound.getCategory()) )){
                 ProductFound.setCategory(inputDto.getCategory());
             }
             productRepository.save(ProductFound);
+
     }
 
     public void deleteProduct(String product_id) {

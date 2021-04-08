@@ -1,6 +1,5 @@
 package com.example.demo.repository.entity;
 
-import javax.validation.constraints.Min;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.persistence.Column;
@@ -22,7 +21,7 @@ public class ProdEntity implements Serializable {
     @Column(length=50, nullable = false)
     private String name;
 
-    @Column(length=20, nullable = false)
+    @Column(length=20)
     private int cost;
 
     @Column(length=50, nullable = false)
