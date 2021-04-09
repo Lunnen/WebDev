@@ -6,6 +6,7 @@ import javax.validation.constraints.Size;
 
 public class ProductRequestModel {
 
+    @Min(0)
     private int cost;
 
     @Size(min=4, max=50, message="Please enter name")
