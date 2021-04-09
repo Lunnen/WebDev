@@ -6,15 +6,12 @@ import javax.validation.constraints.Size;
 
 public class ProductRequestModel {
 
-    @Min(1)
     private int cost;
 
     @Size(min=4, max=50, message="Please enter name")
-    @NotNull
     private String name;
 
     @Size(min=4, max=50, message="Please enter category")
-    @NotNull
     private String category;
 
     public String getName() {

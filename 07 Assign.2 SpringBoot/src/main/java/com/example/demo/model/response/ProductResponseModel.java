@@ -1,4 +1,7 @@
 package com.example.demo.model.response;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class ProductResponseModel {
 
     private String productId;
@@ -6,6 +9,7 @@ public class ProductResponseModel {
     private int cost;
     private String category;
 
+    @JsonProperty("product_id")
     public String getProductId() {return this.productId;}
 
     public void setProductId(String productId) {

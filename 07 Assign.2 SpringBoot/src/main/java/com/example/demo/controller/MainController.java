@@ -13,8 +13,9 @@ import javax.validation.Valid;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin
 @RestController
-@RequestMapping("products")
+@RequestMapping("/products")
 public class MainController {
 
      private final Service prodService;
